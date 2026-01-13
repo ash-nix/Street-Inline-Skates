@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Street Inline Skates</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+</head>
+<body>
+    <div id="ui">
+        <div class="stat">Distance: <span id="dist">0</span>m</div>
+        <div class="stat">Speed: <span id="speed">0</span>km/h</div>
+    </div>
+    
+    <div id="instructions">Hold W/Up to Speed Up • Hold S/Down for T-Stop • Space to Jump</div>
+    
+    <div id="game-over">
+        <h1 id="fail-msg">Wipeout!</h1>
+        <p>You skated <span id="final-dist">0</span> meters.</p>
+        <button onclick="resetGame()">Restart Session</button>
+    </div>
+
+    <div id="mobile-controls">
+        <div style="display: flex; gap: 10px;">
+            <div class="touch-btn" id="btn-left">L</div>
+            <div class="touch-btn" id="btn-right">R</div>
+            <div class="touch-btn" id="btn-down">STOP</div>
+        </div>
+        <div class="touch-btn" id="btn-up" style="background: rgba(255,204,0,0.3)">PUSH</div>
+        <div class="touch-btn" id="btn-jump">JUMP</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
