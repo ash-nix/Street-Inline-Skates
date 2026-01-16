@@ -8,9 +8,13 @@ An Inline Skates HTML game
 ### How to play
 
 Use "A" or "Left Arrow" key to go left
+
 Use "D" or "Right Arrow" key to go right
+
 Hold the "W" key to gain speed
+
 Use the "S" key to stop
+
 Use the "Space" key to jump
 
 
